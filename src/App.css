@@ -1,0 +1,25 @@
+.home-product-cat {
+    position: relative;
+}
+
+.home-product-cat:before, .home-product-cat:before {
+    background-color: #000;
+    content: "";
+    height: 2px;
+    left: -100px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);    
+    width: 80px;
+}
+
+.home-product-cat:after, .home-product-cat:after {
+    background-color: #000;
+    content: "";
+    height: 2px;
+    position: absolute;
+    right: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80px;
+}
