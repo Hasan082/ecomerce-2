@@ -23,3 +23,28 @@
     transform: translateY(-50%);
     width: 80px;
 }
+
+.price-card {
+    @apply absolute bottom-0 left-0 right-0 opacity-0 invisible translate-y-[50px] transition-all duration-1000;
+  }
+  
+  .single-product-card-img:hover .price-card {
+    @apply opacity-100 visible translate-y-[0px];
+  }
+  
+
+  .tabs button.active {
+    @apply bg-purple-700 text-white;
+    
+  }
+  .home-product {
+    animation: fadeIn .5s forwards ease-in-out;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
