@@ -2,18 +2,20 @@
     position: relative;
 }
 
-.home-product-cat:before, .home-product-cat:before {
+.home-product-cat:before,
+.home-product-cat:before {
     background-color: #000;
     content: "";
     height: 2px;
     left: -100px;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);    
+    transform: translateY(-50%);
     width: 80px;
 }
 
-.home-product-cat:after, .home-product-cat:after {
+.home-product-cat:after,
+.home-product-cat:after {
     background-color: #000;
     content: "";
     height: 2px;
@@ -26,25 +28,33 @@
 
 .price-card {
     @apply absolute bottom-0 left-0 right-0 opacity-0 invisible translate-y-[50px] transition-all duration-1000;
-  }
-  
-  .single-product-card-img:hover .price-card {
-    @apply opacity-100 visible translate-y-[0px];
-  }
-  
+}
 
-  .tabs button.active {
+.single-product-card-img:hover .price-card {
+    @apply opacity-100 visible translate-y-[0px];
+}
+
+
+.tabs button.active {
     @apply bg-purple-700 text-white;
-    
-  }
-  .home-product {
+}
+
+.ant-tabs-nav-wrap {
+    justify-content: center;
+}
+
+.single-product  {
     animation: fadeIn .5s forwards ease-in-out;
-  }
-  @keyframes fadeIn {
+}
+
+@keyframes fadeIn {
     0% {
-      opacity: 0;
+        transform: translateY(50px);
+        opacity: 0;
     }
+
     100% {
-      opacity: 1;
+        transform: translateY(0px);
+        opacity: 1;
     }
-  }
+}

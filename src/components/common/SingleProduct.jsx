@@ -8,8 +8,8 @@ const SingleProduct = ({ product }) => {
     const { rate } = rating || {}; 
 
     return (
-        <div className="single-product ">
-            <div className="flex flex-col border-2 cursor-pointer box-border radius-3 single-product-card-img relative py-10 overflow-hidden">
+        <div className="single-product">
+            <div className="flex flex-col border-2 cursor-pointer box-border rounded-xl single-product-card-img relative py-10 overflow-hidden">
                 <div className="w-full h-[230px] flex align-items-center justify-center px-2 py-5 box-border">
                     <img className="max-h-[200px]" src={image} alt={title} />
                 </div>
